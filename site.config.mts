@@ -10,7 +10,7 @@ export interface SocialLink {
 export default {
 	title: 'Wayne',
 	favicon: 'favicon.ico',
-	owner: 'Wayne Stevens',
+	owner: 'Wayne Stephens',
 	profileImage: 'profile.webp',
 	socialLinks: [
 		{

@@ -6,28 +6,62 @@
 @config "../../tailwind.config";
 
 @layer base {
-	:root {
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
-		--primary: 240 5.9% 10%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 240 4.8% 95.9%;
-		--secondary-foreground: 240 5.9% 10%;
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
-		--accent: 240 4.8% 95.9%;
-		--accent-foreground: 240 5.9% 10%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
-		--ring: 240 10% 3.9%;
-		--radius: 0.5rem;
-	}
+    :root {
+      --background: 40 40% 97%;          /* warm cream */
+      --foreground: 30 15% 20%;          /* dark brown-gray text */
+      --card: 40 40% 97%;                /* same as background */
+      --card-foreground: 30 15% 20%;
+
+      --popover: 40 40% 97%;
+      --popover-foreground: 30 15% 20%;
+
+      --primary: 25 45% 35%;             /* warm earthy brown */
+      --primary-foreground: 40 40% 97%;  /* cream for contrast */
+
+      --secondary: 40 25% 90%;           /* light beige */
+      --secondary-foreground: 25 45% 35%;
+
+      --muted: 35 25% 88%;               /* soft taupe */
+      --muted-foreground: 25 10% 40%;    /* desaturated brown-gray */
+
+      --accent: 45 40% 85%;              /* pale warm highlight */
+      --accent-foreground: 25 45% 35%;
+
+      --destructive: 0 70% 45%;          /* muted vintage red */
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 35 20% 85%;              /* subtle beige border */
+      --input: 35 20% 85%;
+      --ring: 25 45% 35%;                /* deep brown accent */
+
+      --radius: 0.5rem;
+    }
+
+    @layer base {
+        .dark {
+            --background: 30 20% 12%;
+            --foreground: 40 40% 90%;
+
+            --card: 30 20% 12%;
+            --card-foreground: 40 40% 90%;
+
+            --primary: 35 45% 60%;
+            --primary-foreground: 30 15% 10%;
+
+            --secondary: 35 15% 25%;
+            --secondary-foreground: 40 40% 90%;
+
+            --muted: 35 10% 25%;
+            --muted-foreground: 40 20% 70%;
+
+			--accent: 40 25% 30%;
+            --accent-foreground: 40 40% 90%;
+
+            --border: 35 15% 25%;
+            --input: 35 15% 25%;
+            --ring: 35 45% 60%;
+        }
+    }
 
 	body {
 		@apply bg-background text-foreground font-sans;
