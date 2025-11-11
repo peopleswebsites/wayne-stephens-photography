@@ -2,48 +2,19 @@ import justifiedLayout from 'justified-layout';
 import GLightbox from 'glightbox';
 
 interface JustifiedLayoutResult {
-	/**
-	 * Height of the container containing the justified layout.
-	 */
-	containerHeight: number;
-	/**
-	 * Number of items that are in rows that aren't fully-packed.
-	 */
-	widowCount: number;
-	/**
-	 * Computed positional and sizing properties of a box in the justified layout.
-	 */
-	boxes: LayoutBox[];
+	containerHeight: number;  /* Height of the container containing the justified layout. */
+	widowCount: number;       /* Number of items that are in rows that aren't fully-packed. */
+	boxes: LayoutBox[];       /* Computed positional and sizing properties of a box in the justified layout. */
 }
 
-/**
- * Computed positional and sizing properties of a box in the layout.
- */
 interface LayoutBox {
-	/**
-	 * Aspect ratio of the box.
-	 */
-	aspectRatio: number;
-	/**
-	 * Distance between the top side of the box and the top boundary of the justified layout.
-	 */
-	top: number;
-	/**
-	 * Width of the box in a justified layout.
-	 */
-	width: number;
-	/**
-	 * Height of the box in a justified layout.
-	 */
-	height: number;
-	/**
-	 * Distance between the left side of the box and the left boundary of the justified layout.
-	 */
-	left: number;
-	/**
-	 * Whether or not the aspect ratio was forced.
-	 */
+	aspectRatio: number;  /* Aspect ratio of the box. */
+	top: number;          /* Distance between the top side of the box and the top boundary of the justified layout. */
+	width: number;        /* Width of the box in a justified layout. */
+	height: number;       /* Height of the box in a justified layout. */
+	left: number;         /* Distance between the left side of the box and the left boundary of the justified layout. */
 	forcedAspectRatio?: boolean;
+                          /* Whether or not the aspect ratio was forced. */
 }
 
 export async function setupGallery() {

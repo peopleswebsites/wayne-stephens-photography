@@ -8,9 +8,9 @@ export interface SocialLink {
 }
 
 export default {
-	title: 'SR',
+	title: 'Wayne',
 	favicon: 'favicon.ico',
-	owner: 'Sara Richard',
+	owner: 'Wayne Stevens',
 	profileImage: 'profile.webp',
 	socialLinks: [
 		{
@@ -18,10 +18,12 @@ export default {
 			url: 'https://github.com/rockem/astro-photography-portfolio',
 			icon: Github,
 		} as SocialLink,
+
 		{
 			name: 'Instagram',
 			url: 'https://www.instagram.com',
 			icon: Instagram,
 		} as SocialLink,
+
 	],
 };
